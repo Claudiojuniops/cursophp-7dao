@@ -28,13 +28,17 @@ require_once("config.php");
 ///$aluno->insert();
 ///echo $aluno;
 
-$usuario = new Usuario ();
+//Alterar um usuario
+//$usuario = new Usuario ();
+//$usuario->loadByid(7);
+//$usuario ->update("logistica", "gamagama");
+//echo $usuario;
 
-$usuario->loadByid(7);
-
-$usuario ->update("logistica", "gamagama");
-
+$usuario = new Usuario();
+$usuario->loadById(6);
+$usuario->delete();
 echo $usuario;
+
 
 // teste começo
 //$sql = new sql();
